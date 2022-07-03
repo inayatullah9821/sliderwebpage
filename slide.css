@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.container .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 100%;
+    animation: animate 10s linear infinite;
+}
+
+.container .slider .slide {
+    position: relative;
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.container .slider .slide .caption {
+    position: absolute;
+    left: 60px;
+    bottom: 60px;
+    right: 60px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.container .slider .slide .caption h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #fff;
+
+}
+
+.container .slider .slide .caption p {
+    font-size: 20px;
+    padding: 5px;
+    color: #fff;
+
+
+}
+
+.container .slider .slide.slide1 {
+    background: url(./backgroundimg/img1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container .slider .slide.slide2 {
+    background: url(./backgroundimg/img2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container .slider .slide.slide3 {
+    background: url(./backgroundimg/img3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container .slider .slide.slide4 {
+    background: url(./backgroundimg/img4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container .slider .slide.slide5 {
+    background: url(./backgroundimg/img5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+@keyframes animate {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    90% {
+        left: -300%;
+    }
+
+    95% {
+        left: -400%;
+    }
+
+    100% {
+        left: -400%;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .container .slider .slide .caption {
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
+        right: 30px;
+        transition: 0.5s;
+         }
+    .container .slider .slide .caption h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        transition: 0.5s;
+    
+    }
+
+    .container .slider .slide .caption p {
+        font-size: 15px;
+        padding: 5px;
+        transition: 0.5s;
+    }
+}
